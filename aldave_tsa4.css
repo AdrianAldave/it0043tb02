@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+margin-right: 200px;
+margin-left: 200px;
+background-image: url(image/bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#logo{
+text-align: left;
+}
+
+.header-1{
+    font-family: 'roboto';
+    font-weight: bold;
+    color: red;
+    font-size: 65px;
+    text-align: center;
+}
+
+.header-2{
+    font-family: 'Times New Roman', Times, serif'';
+    font-weight: bold;
+    color: gold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.default-paragraph{
+    font-family: 'Times New Roman', Times, serif'';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.highlight{
+    font-family: 'Times New Roman', Times, serif'';
+    font-weight: bold;
+    color: red;
+    text-align: center;    
+}
+
+.regards{
+    font-family: 'Times New Roman', Times, serif'';
+    font-weight: light;
+    font-style: italic;
+    color: white;
+    text-align: right;
+}
+
+.line{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
