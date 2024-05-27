@@ -183,6 +183,8 @@ p{
     
     #jig-color:hover{
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: url(IMAGES/jigglypuffbg.jpg);
         transition-duration: 0.5s;
     }
@@ -201,6 +203,8 @@ p{
     
     #mew-color:hover{
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: url(IMAGES/mewbg.png);
         transition-duration: 0.5s;
     }
@@ -302,6 +306,8 @@ p{
     
     #jig-color:hover{
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: url(IMAGES/jigglypuffbg.jpg);
         transition-duration: 0.5s;
     }
@@ -320,6 +326,8 @@ p{
     
     #mew-color:hover{
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: url(IMAGES/mewbg.png);
         transition-duration: 0.5s;
     }
