@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+body{
+    background-image: url(https://i.pinimg.com/736x/a1/86/a8/a186a8aff83506c70b0b307e3fb062c8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img{
+width: 275px;
+height: 275px;
+margin: 15px;
+align-self: center;
+}
+
+.img{
+    display:contents;
+} 
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    justify-content: center;
+    width: 90vw;
+    margin: 20px auto;
+}
+
+.pokemonINFO{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0;
+}
+
+
+.text{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: bolder;
+    align-self: center;
+    justify-content: center;
+    display: none;
+}
+
+.pokeball{
+    display:none;
+}
+
+
+#b-color{
+    background-color:rgb(245, 239, 161);
+}
+
+#bu-color{
+    background-color:rgb(27, 107, 63);
+}
+
+#ca-color{
+    background-color:rgb(62, 190, 120);
+}
+
+#char-color{
+    background-color:rgb(197, 153, 57);
+}
+
+#dra-color{
+    background-color:rgb(57, 118, 197);
+}
+
+#ee-color{
+    background-color:rgb(214, 163, 53);
+}
+
+#jig-color{
+    background-color:rgb(255, 70, 246);
+}
+
+#man-color{
+    background-color:rgb(223, 198, 152);
+}
+
+#meo-color{
+    background-color:rgb(219, 201, 166);
+}
+
+#mew-color{
+    background-color:rgb(250, 240, 187);
+}
+
+#pid-color{
+    background-color:rgb(228, 187, 98);
+}
+
+#pika-color{
+    background-color:rgb(252, 250, 153);
+}
+
+
+
+
+
+@media (max-width: 1085px){
+
+    .text{
+        display: contents;
+    }
+
+    .pokemonINFO{
+        height: 80%;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .pokeball{
+        width: 50px;
+        height: 50px;
+        display: inline;
+        display:contents;
+    }
+    
+
+}
