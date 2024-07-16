@@ -1822,13 +1822,12 @@ font-size: 0.75rem;
     
     .HomeTitle{
         grid-column: 3/8;
-        padding-top: 0;
-        display: flex;
+        place-content: center;
         justify-content: center;
-        text-align: center;
         align-items: center;
+        text-align: center;
         grid-row: 7/8;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         height: 80%;
         width: 80%;
 
@@ -1836,7 +1835,7 @@ font-size: 0.75rem;
     
     .HomeSubTitle{
         /* padding-top: 10px; */
-        font-size: 1rem;
+        font-size: 1.2rem;
         display: flex;
         text-align: center;
         justify-content: center;
