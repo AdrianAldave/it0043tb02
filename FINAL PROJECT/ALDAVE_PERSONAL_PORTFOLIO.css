@@ -1,0 +1,2497 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+footer{
+    width: 100%;
+    height: 15%;
+    background-color: #03045e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.footerIcons{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.footerIcons2{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+
+.footerIcons:hover{
+    transform: scale(1.3);
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* main{
+    background-color: #03045e;
+} */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    background-color: #03045e;
+    color: rgb(255, 255, 255);
+    padding: .5px 0;
+    height: 70px;
+    place-content: center;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+}
+
+.menuList {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    list-style: none;
+    /* margin-left: 5px; */
+}
+
+.option>li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.option>li>a {
+    font-size: 1.2rem;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s all ease;
+}
+
+
+.option>li>a:hover{
+    width: 100%;
+    color: #e2c000;
+
+}
+
+.AdrianAldaveHover{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#AdrianAldaveHover:hover{
+    color: #e2c000;
+}
+
+.OpenOption , .CloseOption{
+position: absolute;
+cursor: pointer;
+color: var(--color1);
+font-size: 1.5rem;
+display: none;
+}
+
+.OpenOption{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.CloseOption{
+    top: 20px;
+    right: 20px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* .logo{
+    margin-right: 20px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(Home_pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+main .container{
+display: flex;
+}
+
+
+
+.HomePage{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100vh;
+    color: #03045e;
+    background-color: #ffffff;
+    transition: all 1s ease-in-out;
+    
+}
+
+.HomePicBubble{
+    /* display: flex; */
+    grid-column: 6/8;
+    grid-row: 4/9;
+    /* right: auto; */
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid #03045e;
+    background-color: #5385e2; 
+    box-shadow: 0 0 20px 5px #2f86b4;
+    /* border-radius: 10%; */
+    transition: all 1s ease-in-out;
+
+}
+.HomePicBubble:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 50px 15px #48abe0;
+}
+
+.HomePageImgContainer{
+    width: 40%;
+    height: 100%;
+    justify-content: start;
+    transition: all 1s ease-in-out;
+    align-items: end;
+}
+
+
+
+
+.HomeTitle{
+    padding-top: 30px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    grid-column: 2/6;
+    grid-row: 4/5;
+    font-size: 3rem;
+    transition: all 1s ease-in-out;
+
+}
+
+.HomeSubTitle{
+    /* padding-top: 10px; */
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/5;
+    grid-row: 5/6;
+    color: black;
+    transition: all 1s ease-in-out;
+
+}
+
+.HomeText{
+    padding-top: 10px;
+    grid-column: 2/5;
+    grid-row: 6/7;
+    /* font-size: 1.2rem; */
+    color: black;
+    transition: all 1s ease-in-out;
+
+}
+
+#HomeLogoResize{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#HomeLogoResize:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.HomeSocials{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-column: 2/6;
+    grid-row: 7/8;
+    display: flex;
+    gap: 20px;
+    transition: all 1s ease-in-out;
+
+}
+
+.DownloadCV{
+    grid-column: 2/3;
+    grid-row: 8/9;
+    width: 300px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #03045e;
+    border-radius: 25px;
+    text-decoration: none;
+    /* outline: none; */
+    transition: all 1s ease-in-out;
+
+}
+
+.DownloadCV:hover{
+    background-color: #000125;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+.ContactInformationPage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.ContactInformationQuestions{
+    width: 800px;
+    padding: 25px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.ContactInformationQuestionsContainer{
+    padding-top: 100px;
+    display: grid;
+    grid-column: 2/4;
+    transition: all 0.7s ease-in-out;
+
+    grid-row: 1/3;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(https://files.123freevectors.com/wp-content/original/154027-abstract-blue-and-white-background-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.ContactInformationPageDescriptionContainer{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #03045e;
+}
+.ContactInformationPageDescription{
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    color: white;
+
+}
+.ContactInformationTitle{
+    display: flex;
+    font-weight: bolder;
+    font-size: 3.25rem;
+
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactInformationSubTitle{
+    font-size: 1.2rem;
+
+}
+
+.ContactInformationText{
+    font-size: 1rem;
+
+}
+
+.AdditionalContactInformation{
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    width: 100%;
+
+    padding: 5px;
+}
+
+#AdditionalContactInformationPadding{
+    padding-top: 30%;
+}
+
+.NameBox{
+    width: 650px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #03045e;
+    transition: all 0.7s ease-in-out;
+
+
+}
+
+.EmailBox{
+    width: 650px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #03045e;
+    transition: all 0.7s ease-in-out;
+
+}
+
+.ContactBox{
+    width: 650px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #03045e;
+    transition: all 0.7s ease-in-out;
+
+}
+
+#Message{
+width: 650px;
+height: 530px;
+resize: inherit;
+outline: none;
+border-radius: 10px;
+padding: 20px;
+border: 3px solid #03045e;
+transition: all 0.7s ease-in-out;
+
+}
+
+.ContactInformationButton{
+    width: 125px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    border: 3px solid #03045e;
+    background-color: #03045e;
+    color: white;
+    transition: all 0.7s ease-in-out;
+
+}
+
+.ContactInformationButtonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+
+.ContactInformationButton:hover{
+    width: 125px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: #000125;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+
+.SocMedLinksPage{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0077b6;
+
+}
+
+.SocMedTitle{
+    /* width: 500px; */
+    margin: 20px;
+    gap: 10px;
+    display: grid;
+    grid-column: 4/8;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+}
+
+.SocMedDesc{
+    font-size: 1.2rem;
+    margin: 5px;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    /* width: 600px; */
+    text-align: center;
+    gap: 5px;
+    padding-bottom: 20px;
+    color: white;
+}
+/* .SocMedImageGridContainer{
+    display: grid;
+    grid-column: 2/8;
+}
+
+.SocMedImageContainer{
+    width: 1200px;
+    height: 600px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+} */
+
+.SocMedImageBoxes{
+    width: 270px;
+    transition: all 0.7s ease-in-out;
+
+    gap: 10px;
+    margin: 10px;
+    height: 350px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    /* flex-wrap: wrap; */
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0 6px #5f5f5f;
+}
+
+#SocMedLogoResize{
+width: 200px;
+height: 200px;
+border-radius: 25px;
+transition: all 0.7s ease-in-out;
+
+}
+
+#SocMedLogoResize:hover{
+transform: scale(1.2);
+transition: all 0.2s ease-in-out;
+}
+
+.SocMedAppTitle{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.SocMedAppUsername{
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+#SocialFB{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+#SocialIG{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+#SocialGH{
+    grid-column: 6/7;
+    grid-row: 3/4;
+}
+#SocialED{
+    grid-column: 7/8;
+    grid-row: 3/4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.FAQPage{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.FAQQuestionsContainer{
+        padding-top: 100px;
+        display: grid;
+        grid-column: 9/11;
+        grid-row: 1/14;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #03045e;
+    }
+        
+        .FAQTitleAndMoreQuestions{
+            margin: 20px;
+            flex-direction: column;
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+            grid-column: 8/9;
+                grid-row: 2/3;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .FAQDescriptionTextForm{
+            width: 75%;
+            /* height: 100%; */
+            padding-top: 20px;
+            grid-column: 8/9;
+            grid-row: 3/9;
+            gap: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 25px;
+            place-self: center;
+    }
+    
+
+
+    #FAQ1{
+        grid-column: 2/8;
+        grid-row: 3/4;
+    }
+
+    #FAQ2{
+        grid-column: 2/8;
+        grid-row: 4/6;
+    }
+
+    #FAQ3{
+        grid-column: 2/8;
+        grid-row: 6/7;
+    }
+
+    #FAQ4{
+        grid-column: 2/8;
+        grid-row: 7/9;
+    }
+
+    #FAQ5{
+        grid-column: 2/8;
+        grid-row: 9/10;
+    }
+
+    #FAQ6{
+        grid-column: 2/8;
+        grid-row: 10/12;
+    }
+
+
+    .FAQQuestionAndAnswerBubble{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    transition: all 0.7s ease-in-out;
+    height: 90px;
+        border-radius: 25px;
+        padding: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 6px #000000;
+        }
+        
+        .FAQQuestionAndAnswerBubble:hover{
+            transform: scale(1.3);
+        transition: all 0.2s ease-in-out;
+        }
+        
+        .FAQQuestionAndAnswerIcon{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 25px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+        
+        
+        .FAQQuestion{
+        font-size: 1.3rem;
+        color: #03045e;
+
+        }
+        
+        .FAQAnswer{
+        font-size: 0.9rem;
+        color: #000000;
+        }
+        
+        .FAQIconAndQA{
+            justify-content: center;
+            display: flex;
+            /* width: 1500px; */
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .FAQNameBox{
+            width: 90%;
+            height: 30px;
+            border-radius: 10px;
+            padding: 20px;
+            border: 3px solid #03045e;
+        }
+        
+        .FAQEmailBox{
+            width: 90%;
+            height: 30px;
+            border-radius: 10px;
+            padding: 20px;
+            border: 3px solid #03045e;
+        }
+        
+        #Question{
+            width: 90%;
+            height: 250px;
+            resize: inherit;
+            outline: none;
+            border-radius: 10px;
+            padding: 20px;
+            border: 3px solid #03045e;
+            }
+            
+            .FAQButton{
+                width: 125px;
+                height: 50px;
+                margin: 20px;
+                border-radius: 25px;
+                border: 3px solid #03045e;
+                background-color: #03045e;
+                color: white;
+            }
+            
+            .FAQButtonDiv{
+                display: flex;
+                justify-content: center;
+            }
+            
+            
+            .FAQButton:hover{
+                margin: 20px;
+                border-radius: 25px;
+                background-color: #000125;
+                color: white;
+                transform: scale(1.1);
+                transition: all 0.2s ease-in-out;
+            }
+
+#FAQ{
+    /* background-image: url(https://img.freepik.com/premium-vector/abstract-blue-white-background_144721-130.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #9cc4da;
+}
+
+
+/* .FAQDescriptionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: #03045e;
+} */
+
+
+
+
+
+/* .FAQQuestionAndAnswerContainer{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 60%;
+justify-content: center;
+align-items: center;
+margin: 50px;
+height: ;
+border: 1px solid black;
+} */
+
+
+.ServicesPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #03045e;
+}
+
+
+.ServicesPageTitleContainer{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/6;
+    font-size: 3.25rem;
+    /* place-self: center; */
+    /* margin-left: 50px; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #03045e;
+    height: 100%;
+}
+
+.ServicesJobTitle{
+    font-size: 1.2rem;
+}
+
+.ServicesDescriptionTitle{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 50px;
+    font-size: 3rem;
+}
+
+.ServicesDescription{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    /* width: 50; */
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+.ServicesWorkBox{
+    transition: all 0.7s ease-in-out;
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    width: 75%;
+    height: 325px;
+    background-color: #0077b6;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 6px #1d0052;
+    /* gap: 17.5px; */
+}
+
+#WorkBox1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    place-self: center;
+}
+
+
+#WorkBox2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    place-self: center;
+}
+
+#WorkBox3{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    place-self: center;
+}
+
+#WorkBox4{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    place-self: center;
+}
+
+.ServicesImage{
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    place-self: center;
+}
+
+.ServicesImageContainer{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+}
+
+#ServicesPageTitle{
+/* padding-left: 120px; */
+/* padding-right: 60px; */
+place-items: center;
+margin: 100px;
+/* z-index:; */
+}
+
+
+
+
+.ServicesButton{
+background-color: #1d0052;
+border: none;
+width: 30%;
+height: 40px;
+color: white;
+border-radius: 25px;
+}
+
+.ServicesButton:hover{
+    background-color: #120035;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.ServicesWorkDescription{
+    width: 200px;
+    margin: 20px;
+    text-align: center;  
+}
+
+
+#ServicesBackground{
+    grid-column: 2/4;
+    grid-row: 1/6;
+    background-color: white;
+    background-image: url(https://files.123freevectors.com/wp-content/original/154027-abstract-blue-and-white-background-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+
+
+
+.PortfolioPage{
+
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-color: #0077b6;
+}
+
+
+.PortfolioPageTitle{
+    transition: all 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    grid-column: 6/9;
+    grid-row: 2/3;
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    
+}
+
+#PortfolioWorkBox1{
+    grid-column: 2/4;
+    grid-row: 4/8;
+    width: 100%;
+    height: 100%;
+}
+
+#PortfolioWorkBox2{
+    grid-column: 5/7;
+    grid-row: 4/8;
+}
+
+#PortfolioWorkBox3{
+    grid-column: 8/10;
+    grid-row: 4/8;
+}
+
+#PortfolioWorkBox4{
+    grid-column: 11/13;
+    grid-row: 4/8;
+}
+
+#PortfolioWorkBox5{
+    grid-column: 2/4;
+    grid-row: 9/13;
+}
+
+#PortfolioWorkBox6{
+    grid-column: 5/7;
+    grid-row: 9/13;
+}
+
+#PortfolioWorkBox7{
+    grid-column: 8/10;
+    grid-row: 9/13;
+}
+
+#PortfolioWorkBox8{
+    grid-column: 11/13;
+    grid-row: 9/13;
+}
+
+
+
+
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: all 0.7s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 20px 0px rgba(10, 2, 10, 100);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+.flip-card-back {
+    background-color: #03045e;
+    color: white;
+    /* background-image: url(Home_pic.png);
+background-repeat: no-repeat;
+background-size: cover;    
+color: white; */
+padding-top: 10px;
+font-size: 0.75rem;
+    transform: rotateY(180deg);
+}
+
+#flipCardColor1{
+    background-color: #03045e;
+    color: white;
+
+}
+
+#flipCardColor2{
+    background-color: #ffffff;
+}
+
+#flipCardColor3{
+    background-color: #03045e;
+    color: white;
+
+}
+
+#flipCardColor4{
+    background-color: #ffffff;
+}
+#flipCardColor5{
+    background-color: #ffffff;
+}
+
+#flipCardColor6{
+    background-color: #03045e;
+    color: white;
+
+}
+
+#flipCardColor7{
+    background-color: #ffffff;
+}
+
+#flipCardColor8{
+    background-color: #03045e;
+    color: white;
+
+}
+
+
+
+.PortfolioImageSize{
+    width: 80%;
+    height: 80%;
+    padding-top: 15px;
+    place-self: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1200px){
+
+
+
+
+    .HomePage{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 100vh;
+        color: #03045e;
+        background-color: #ffffff;
+    }
+    
+    .HomePicBubble{
+        /* display: flex; */
+        grid-column: 6/8;
+        grid-row: 4/9;
+        /* right: auto; */
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        /* border-radius: 10%; */
+        border: 1px solid #03045e;
+        background-color: #a9abff; 
+    
+    }
+    
+    .HomePageImgContainer{
+        width: 40%;
+        height: 100%;
+
+    }
+    
+    
+    
+    
+    .HomeTitle{
+        padding-top: 30px;
+        grid-column: 2/8;
+        grid-row: 4/5;
+        font-size: 2.2rem;
+        width: 90%;
+    }
+    
+    .HomeSubTitle{
+        /* padding-top: 10px; */
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2/5;
+        grid-row: 5/6;
+        color: black;
+    }
+    
+    .HomeText{
+        padding-top: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .HomeSocials{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .DownloadCV{
+        width: 200px;
+    }
+
+
+
+    .PortfolioPage{
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+    
+    .PortfolioPageTitle{
+        grid-column: 7/9;
+        grid-row: 2/3;
+        font-size: 2.3rem;
+        width: 90px;
+    }
+    
+    #PortfolioWorkBox1{
+        grid-column: 3/6;
+        grid-row: 4/7;
+    }
+    
+    #PortfolioWorkBox2{
+        grid-column: 7/9;
+        grid-row: 4/7;
+    }
+    
+    #PortfolioWorkBox3{
+        grid-column: 10/13;
+        grid-row: 4/7;
+    }
+    
+    #PortfolioWorkBox4{
+        grid-column: 4/7;
+        grid-row: 8/11;
+    }
+    
+    #PortfolioWorkBox5{
+        grid-column: 9/12;
+        grid-row: 8/11;
+    }
+    
+    #PortfolioWorkBox6{
+        grid-column: 3/6;
+        grid-row: 12/15;
+    }
+    
+    #PortfolioWorkBox7{
+        grid-column: 7/9;
+        grid-row: 12/15;
+    }
+    
+    #PortfolioWorkBox8{
+        grid-column: 10/13;
+        grid-row: 12/15;
+    }
+
+    .PortfolioImageSize{
+        width: 60%;
+        height: 60%;
+        place-content: center;
+    }
+
+    .flip-card-back {
+        font-size: 0.5rem;
+        }
+
+
+
+
+
+
+    .ServicesPage{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    
+    
+    .ServicesPageTitleContainer{
+        grid-column: 1/11;
+        grid-row: 1/4;
+        font-size: 3.25rem;
+    }
+    
+    .ServicesJobTitle{
+        font-size: 1.2rem;
+        /* margin-bottom: 20px; */
+    }
+    
+    .ServicesDescriptionTitle{
+        font-size: 2rem;    
+        padding-top: 50px;
+        padding-bottom: 0px;    
+    }
+    
+    .ServicesDescription{
+        /* grid-column: 1/2; */
+        /* grid-row: 4/5; */
+        font-size: 0.8rem;
+    }
+    
+    
+    #WorkBox1{
+        grid-column: 2/6;
+        grid-row: 5/7;
+    }
+    
+    
+    #WorkBox2{
+        grid-column: 6/10;
+        grid-row: 5/7;
+    }
+    
+    #WorkBox3{
+        grid-column: 2/6;
+        grid-row: 8/9;
+    }
+    
+    #WorkBox4{
+        grid-column: 6/10;
+        grid-row: 8/9;
+    
+    }
+    
+    
+    .ServicesWorkBox{
+        width: 90%;
+        height: 250px;
+        justify-content: space-evenly;
+    }
+
+    .ServicesWorkDescription{
+        width: 200px;
+        margin: 5px;
+        font-size: 0.8rem;
+        text-align: center;  
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    .SocMedTitle{
+
+        margin: 20px;
+        gap: none;
+        grid-column: 2/6;
+        grid-row: 2/3;
+        text-align: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-family: "Kanit", sans-serif;
+    }
+    
+    .SocMedDesc{
+        font-size: 1rem;
+        margin: 5px;
+        height: 300px;
+        grid-column: 2/6;
+        grid-row: 3/4;
+    }
+
+    
+    .SocMedImageBoxes{
+        width: 250px;
+        gap: 10px;
+        margin: 10px;
+        height: 300px;
+    }
+    
+    #SocMedLogoResize{
+    width: 170px;
+    height: 170px;
+    border-radius: 25px;
+    }
+    
+    .SocMedAppTitle{
+        font-size: 1.2rem;
+
+    }
+    
+    .SocMedAppUsername{
+        font-size: 1.3rem;
+
+    }
+
+    #SocialFB{
+        grid-column: 7/8;
+        grid-row: 2/3;
+    }
+    #SocialIG{
+        grid-column: 9/10;
+        grid-row: 2/3;
+    }
+    #SocialGH{
+        grid-column: 7/8;
+        grid-row: 3/4;
+    }
+    #SocialED{
+        grid-column: 9/10;
+        grid-row: 3/4;
+    }
+
+
+
+
+    .ContactInformationPage{
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    
+    .ContactInformationQuestionsContainer{
+        padding-top: 0px;
+        grid-column: 1/14;
+        grid-row: 2/4;
+        height: 100%;
+    }
+
+    .ContactInformationQuestions{
+        height: 500px;
+    }
+
+    .ContactInformationPageDescriptionContainer{
+        flex-direction: row;
+        grid-column: 1/14;
+        grid-row: 1/2;
+        height: 100%;
+    }
+
+    #AdditionalContactInformationPadding{
+        padding-top: 30%;
+    }
+    
+    .NameBox{
+        height: 40px;
+    }
+    
+    .EmailBox{
+        height: 40px;
+    }
+    
+    .ContactBox{
+        height: 40px;
+    }
+    
+    #Message{
+    height: 200px;
+    }
+    
+
+
+    .ContactInformationPageDescription{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .ContactInformationTitle{
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 20%;
+    }
+
+    
+    .ContactInformationText{
+        font-size: 1rem;
+        padding-left: 0px;
+        padding-right: 30px;
+        padding-left: 20px;
+        width: 30%;
+        height: 70%;
+        /* grid-column: 10/11; */
+    
+    }
+    
+    .AdditionalContactInformation{
+        /* display: grid; */
+        grid-column: 10/12;
+        grid-row: 1/2;
+    }
+    
+    #AdditionalContactInformationPadding{
+        padding-top: 0%;
+    }
+
+
+    .AdditionalIconContainer{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    .FAQPage{
+        transition: smooth;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+    
+    .FAQQuestionsContainer{
+            padding-top: 1px;
+            display: flex;
+            flex-direction: row;
+            grid-column: 1/12;
+            grid-row: 1/6;
+            height: 100%;
+            contain: content;
+            justify-content: space-evenly;
+        }
+            
+            .FAQTitleAndMoreQuestions{
+                font-size: 2rem;
+                grid-column: 2/4;
+                    /* grid-row: 1/2; */
+            }
+
+            .FAQDescriptionTextForm{
+                width: 500px;
+                height: 55%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                /* justify-content: space-around; */
+                margin-top: 50px;
+                margin: 20px;
+                align-items: center;
+                grid-column: 5/11;
+                grid-row: 2/3;
+                contain: content;
+        }
+        
+        /* .FAQDescriptionTextForm {
+            width: 450px;
+            height: 60%;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+            grid-column: 5/11;
+            grid-row: 2/3;
+            contain: none;
+        } */
+    
+        #FAQ1{
+            grid-column: 2/6;
+            grid-row: 7/8;
+        }
+    
+        #FAQ2{
+            grid-column: 2/6;
+            grid-row: 9/10;
+        }
+    
+        #FAQ3{
+            grid-column: 2/6;
+            grid-row: 11/12;
+        }
+    
+        #FAQ4{
+            grid-column: 7/11;
+            grid-row: 7/8;
+        }
+    
+        #FAQ5{
+            grid-column: 7/11;
+            grid-row: 9/10;
+        }
+    
+        #FAQ6{
+            grid-column: 7/11;
+            grid-row: 11/12;
+        } 
+            
+            .FAQQuestion{
+            font-size: 0.8rem;
+            }
+            
+            .FAQAnswer{
+            font-size: 0.6rem;
+            }
+
+            .FAQNameBox{
+                width: 200px;
+                height: 10px;
+                border-radius: 10px;
+                border: px solid #03045e;
+            }
+            
+            .FAQEmailBox{
+                width: 200px;
+                height: 10px;
+
+            }
+            
+            #Question{
+                width: 220px;
+                height: 80px;
+                margin-left: 0px;
+                padding: 10px;
+                }
+
+
+                .FAQQuestionAndAnswerBubble{
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    height: 90px;
+                    /* border: 1px solid black; */
+                    border-radius: 25px;
+                    /* padding: 10px; */
+                    justify-content: center;
+                    background-color: #ffffff;
+                    box-shadow: 0 6px #000000;
+                    }
+    
+
+
+                .FAQButton{
+                    width: 100px;
+                    height: 30px;
+                    margin: 20px;
+                    border-radius: 25px;
+                    border: 3px solid #03045e;
+                    background-color: #03045e;
+                    color: white;
+                }
+                
+                .FAQButtonDiv{
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                
+                .FAQButton:hover{
+                    margin: 20px;
+                    border-radius: 25px;
+                    background-color: #000125;
+                    color: white;
+                    transform: scale(1.1);
+                    transition: all 0.2s ease-in-out;
+                }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+
+
+.Option{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #03045e;
+    transition: all 0.3s ease-in-out;
+}
+
+.Option>li{
+    margin-top: 10px;
+}
+
+.Option>li>a{
+    padding: 5px;
+}
+
+.OpenOption , .CloseOption{
+    display: block;
+}
+#check:checked ~ .Option
+{right: 0;}
+
+
+
+    .HomePage{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 100%;
+        color: #03045e;
+        background-color: #ffffff;
+    }
+    
+    .HomePicBubble{
+        /* display: flex; */
+        /* place-content: none; */
+        /* justify-content: start; */
+        align-items: start;
+        grid-column: 3/8;
+        grid-row: 4/7;
+        /* right: auto; */
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        /* border-radius: 10%; */
+        border: 1px solid #03045e;
+        background-color: #a9abff; 
+    
+    }
+    
+    .HomePageImgContainer{
+        width: 40%;
+        height: 100%;
+
+    }
+    
+    
+    .HomeTitle{
+        grid-column: 3/8;
+        place-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-row: 7/8;
+        font-size: 1.5rem;
+        height: 80%;
+        width: 80%;
+
+    }
+    
+    .HomeSubTitle{
+        /* padding-top: 10px; */
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2/8;
+        grid-row: 8/9;
+        color: black;
+    }
+    
+    .HomeText{
+        padding-top: 10px;
+        font-size: 0.9rem;
+        grid-column: 2/8;
+        text-align: center;
+        grid-row: 9/10;
+        place-content: center;
+
+    }
+    
+    .HomeSocials{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        grid-column: 4/7;
+        grid-row: 10/11;
+        place-content: center;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+
+    }
+    
+    .DownloadCV{
+        width: 100%;
+        grid-column: 4/6;
+        grid-row: 11/12;
+        place-content: center;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .PortfolioPage{
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+    }
+    
+    .PortfolioPageTitle{
+        padding-top: 20px;
+        grid-column: 7/9;
+        grid-row: 2/3;
+        font-size: 1.8rem;
+    }
+    
+    #PortfolioWorkBox1{
+        grid-column: 3/8;
+        grid-row: 4/6;
+    }
+    
+    #PortfolioWorkBox2{
+        grid-column: 9/13;
+        grid-row: 4/6;
+    }
+    
+    #PortfolioWorkBox3{
+        grid-column: 3/7;
+        grid-row: 7/9;
+    }
+    
+    #PortfolioWorkBox4{
+        grid-column: 8/13;
+        grid-row: 7/9;
+    }
+    
+    #PortfolioWorkBox5{
+        grid-column: 3/8;
+        grid-row: 10/12;
+    }
+    
+    #PortfolioWorkBox6{
+        grid-column: 9/13;
+        grid-row: 10/12;
+    }
+    
+    #PortfolioWorkBox7{
+        grid-column: 3/7;
+        grid-row: 13/15;
+    }
+    
+    #PortfolioWorkBox8{
+        grid-column: 8/13;
+        grid-row: 13/15;
+    }
+
+    .PortfolioImageSize{
+        width: 60%;
+        height: 60%;
+        place-content: center;
+    }
+
+
+
+
+    .flip-card {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #flipCardColor1{
+        background-color: #03045e;
+        color: white;
+    
+    }
+    
+    #flipCardColor2{
+        background-color: #ffffff;
+    }
+    
+    #flipCardColor3{
+        background-color: #ffffff;
+        color: black;
+    
+    }
+    
+    #flipCardColor4{
+        background-color: #03045e;
+        color: white;
+    }
+    #flipCardColor5{
+        background-color: #03045e;
+        color: white;
+    }
+    
+    #flipCardColor6{
+        background-color: #ffffff;
+        color: black;
+    }
+    
+    #flipCardColor7{
+        background-color: #ffffff;
+    }
+    
+    #flipCardColor8{
+        background-color: #03045e;
+        color: white;
+    
+    }
+
+
+
+
+
+
+
+
+
+    .ServicesPage{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    
+    
+    .ServicesPageTitleContainer{
+        grid-column: 1/11;
+        grid-row: 1/4;
+        font-size: 3.25rem;
+    }
+    
+    .ServicesDescriptionTitle{
+        font-size: 2rem;    
+        padding-top: 50px;
+        padding-bottom: 0px;    
+    }
+    
+    .ServicesDescription{
+        /* grid-column: 1/2; */
+        /* grid-row: 4/5; */
+        font-size: 0.8rem;
+    }
+
+
+    .ServicesImageContainer{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        /* margin: 20px; */
+        background-color: white;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+
+    .ServicesJobTitle{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    
+    .ServicesWorkBox{
+        width: 90%;
+        flex-wrap: wrap;
+        height: 70px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .ServicesWorkDescription{
+        display: none;
+    }
+    
+    #WorkBox1{
+        grid-column: 2/10;
+        grid-row: 4/5;
+    }
+    
+    
+    #WorkBox2{
+        grid-column: 2/10;
+        grid-row: 5/6;
+    }
+    
+    #WorkBox3{
+        grid-column: 2/10;
+        grid-row: 6/7;
+    }
+    
+    #WorkBox4{
+        grid-column: 2/10;
+        grid-row: 7;
+    
+    }
+    
+    
+
+
+
+
+
+
+
+    .SocMedLinksPage{
+
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+    
+    }
+    
+    .SocMedTitle{
+
+        gap: 10px;
+
+
+        grid-column: 2/10;
+        grid-row: 1/2;
+        /* height: 200px; */
+
+        padding-top: 50px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        color: white;
+    }
+    
+    .SocMedDesc{
+        font-size: 1rem;
+        margin: 0px;
+        grid-column: 2/10;
+        grid-row: 2/3;
+        /* width: 200px; */
+        height: 100px;
+        text-align: center;
+        gap: 5px;
+        padding-bottom: 0px;
+        color: white;
+    }
+    
+    .SocMedImageBoxes{
+        width: 100%;
+        gap: 0px;
+        margin: 0px;
+        height: 100%;
+        display: flex;
+        place-content: center;
+        color: rgb(0, 0, 0);
+        /* flex-wrap: wrap; */
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50px;
+        padding-left: 17.5px;
+        box-shadow: 0 6px #5f5f5f;
+    }                   
+    
+    #SocMedLogoResize{
+    width: 80%;
+    height: 80%;
+    place-content: center;
+    border-radius: 25px;
+    }
+    
+    #SocMedLogoResize:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .SocMedAppTitle{
+        display: none;
+    }
+    
+    .SocMedAppUsername{
+        font-size: 1.3rem;
+        font-weight: normal;
+        text-align: center;
+        display: none;
+    }
+    
+
+    #SocialFB{
+        grid-column: 2/5;
+        grid-row: 3/4;
+    }
+    #SocialIG{
+        grid-column: 7/10;
+        grid-row: 3/4;
+    }
+    #SocialGH{
+        grid-column: 2/5;
+        grid-row: 4/5;
+    }
+    #SocialED{
+        grid-column: 7/10;
+        grid-row: 4/5;
+    }
+
+
+
+
+
+
+        .FAQPage {
+            display: grid;
+            grid-template-columns: repeat(11, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            /* width: 100%; */
+            /* height: 100%; */
+        }
+    
+        .FAQQuestionsContainer {
+            padding-top: 1px;
+            display: flex;
+            flex-direction: column;
+            grid-column: 1/12;
+            grid-row: 1/3;
+            /* height: 100%; */
+            align-items:center;
+            contain: content;
+            justify-content: center;
+        }
+    
+        .FAQTitleAndMoreQuestions {
+            font-size: 1.5rem;
+            padding-top: 30px;
+            grid-column: 2/4;
+            margin: 0px;
+            margin-left: 5px;
+            margin-right: 5px;
+            /* grid-row: 1/2; */
+        }
+    
+        #FAQ1 {
+            grid-column: 2/11;
+            grid-row: 3/4;
+        }
+    
+        #FAQ2 {
+            grid-column: 2/11;
+            grid-row: 4/5;
+        }
+    
+        #FAQ3 {
+            grid-column: 2/11;
+            grid-row: 5/6;
+        }
+    
+        #FAQ4 {
+            grid-column: 2/11;
+            grid-row: 6/7;
+        }
+    
+        #FAQ5 {
+            grid-column: 2/11;
+            grid-row: 7/8;
+        }
+    
+        #FAQ6 {
+            grid-column: 2/11;
+            grid-row: 8/9;
+        }
+
+        .FAQQuestion {
+            font-size: 0.7rem;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .FAQAnswer {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 0.7rem;
+        }
+
+        .FAQDescriptionTextForm {
+            display: flex;
+            width: 0px;
+            height: 0;
+            margin: 0;
+            align-items: start;
+            /* justify-content: space-between; */
+            margin-top: 0px;
+            grid-column: 5/11;
+            grid-row: 2/3;
+            /* contain: none */
+        }
+        .FAQNameBox {
+            width: 140px;
+            height: 10px;
+            padding: 10px;
+            font-size: 0.7rem;
+            margin-bottom: 5px;
+            display: none;
+        }
+    
+        .FAQEmailBox {
+            width: 140px;
+            height: 10px;
+            padding: 10px;
+            font-size: 0.7rem;
+            margin-bottom: 5px;
+            display: none;
+
+        }
+    
+        #Question {
+            width: 165px;
+            height: 80px;
+            margin-left: 0px;
+            padding: 10px;
+            font-size: 0.7rem;
+            display: none;
+        }
+    
+    
+        .FAQButton{
+            width: 90px;
+            height: 40px;
+            margin: 20px;
+            border-radius: 25px;
+            border: 3px solid #03045e;
+            background-color: #03045e;
+            color: white;
+        }
+        
+        .FAQButtonDiv{
+            display: flex;
+            display: block;
+            justify-content: start;
+            /* display: block; */
+        }
+        
+        
+        .FAQButton:hover{
+            margin: 20px;
+            border-radius: 25px;
+            background-color: #000125;
+            color: white;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+        
+
+
+
+    .FAQQuestionAndAnswerBubble{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 65px;
+        /* border: 1px solid black; */
+        border-radius: 25px;
+        padding: 0px;
+        justify-content: center;
+        margin: 20px;
+        box-shadow: 0 6px #000000;
+        contain: content;
+        }
+
+
+
+
+
+        .ContactInformationPage{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+        
+    
+        #AdditionalContactInformationPadding{
+            padding-top: 30%;
+        }
+        
+        .NameBox{
+            height: 40px;
+            width: 100%;
+
+        }
+        
+        .EmailBox{
+            height: 40px;
+            width: 100%;
+
+        }
+        
+        .ContactBox{
+            height: 40px;
+            width: 100%;
+
+        }
+        
+        #Message{
+        height: 200px;
+        width: 100%;
+
+
+        }
+        
+    
+        
+        .ContactInformationQuestionsContainer{
+            padding-top: 0px;
+            grid-column: 1/4;
+            grid-row: 3/6;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://files.123freevectors.com/wp-content/original/154027-abstract-blue-and-white-background-design.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .ContactInformationQuestions{
+            height: 500px;
+            width: 100%;
+        }
+    
+        .ContactInformationPageDescriptionContainer{
+            /* flex-direction: column; */
+            grid-column: 1/14;
+            grid-row: 1/3;
+            height: 100%;
+        }
+
+    
+        .ContactInformationPageDescription{
+            width: 500px;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ContactInformationTitle{
+            padding-top: 50px;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        width: 70%;
+        }
+    
+        
+        .ContactInformationText{
+            font-size: 0.8rem;
+            padding-left: 0px;
+            padding-right: 30px;
+            padding-left: 20px;
+            width: 100%;
+            height: 70%;
+            text-align: center;
+            /* grid-column: 10/11; */
+        
+        }
+        
+        .AdditionalContactInformation{
+            /* display: grid; */
+            grid-column: 10/12;
+            grid-row: 1/2;
+        }
+        
+        #AdditionalContactInformationPadding{
+            padding-top: 0%;
+        }
+    
+    
+        .AdditionalIconContainer{
+            padding-top: px;
+            /* padding-left: 20px; */
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
