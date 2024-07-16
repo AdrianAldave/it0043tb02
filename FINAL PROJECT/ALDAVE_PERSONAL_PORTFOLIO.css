@@ -1805,7 +1805,7 @@ font-size: 0.75rem;
         grid-row: 4/7;
         /* right: auto; */
         width: 80%;
-        height: 80%;
+        height: 100%;
         border-radius: 50%;
         /* border-radius: 10%; */
         border: 1px solid #03045e;
@@ -1827,7 +1827,7 @@ font-size: 0.75rem;
         align-items: center;
         text-align: center;
         grid-row: 7/8;
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         height: 80%;
         width: 80%;
 
@@ -1835,7 +1835,7 @@ font-size: 0.75rem;
     
     .HomeSubTitle{
         /* padding-top: 10px; */
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -2137,13 +2137,14 @@ font-size: 0.75rem;
         width: 100%;
         gap: 0px;
         margin: 0px;
-        height: 100%;
+        height: 95%;
         display: flex;
         place-content: center;
         color: rgb(0, 0, 0);
         /* flex-wrap: wrap; */
         background-color: #ffffff;
         justify-content: center;
+        flex-direction: none;
         align-items: center;
         border: 1px solid black;
         border-radius: 50px;
