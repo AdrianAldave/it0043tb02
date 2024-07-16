@@ -1059,7 +1059,6 @@ border-radius: 25px;
 
 
 .flip-card {
-    
     width: 100%;
     height: 100%;
     perspective: 1000px;
@@ -1746,7 +1745,7 @@ font-size: 0.75rem;
 
 
 
-@media(max-width: 800px){
+@media screen and (max-width: 800px) and (min-width: 600px){
 
 
 .Option{
@@ -1780,7 +1779,6 @@ font-size: 0.75rem;
 
 
 
-
     .HomePage{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -1798,11 +1796,11 @@ font-size: 0.75rem;
         /* place-content: none; */
         /* justify-content: start; */
         align-items: start;
-        grid-column: 4/6;
+        grid-column: 3/8;
         grid-row: 4/7;
         /* right: auto; */
-        width: 275px;
-        height: 275px;
+        width: 80%;
+        height: 80%;
         border-radius: 50%;
         /* border-radius: 10%; */
         border: 1px solid #03045e;
@@ -1818,14 +1816,15 @@ font-size: 0.75rem;
     
     
     .HomeTitle{
-        padding-top: 30px;
-        grid-column: 3/7;
+        grid-column: 3/8;
         place-content: center;
         justify-content: center;
         align-items: center;
         text-align: center;
         grid-row: 7/8;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        height: 80%;
+        width: 80%;
 
     }
     
@@ -1854,10 +1853,13 @@ font-size: 0.75rem;
     .HomeSocials{
         padding-top: 5px;
         padding-bottom: 5px;
-        grid-column: 2/8;
+        grid-column: 4/7;
         grid-row: 10/11;
         place-content: center;
         display: flex;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
 
     }
     
@@ -1944,6 +1946,11 @@ font-size: 0.75rem;
 
 
 
+
+    .flip-card {
+        width: 100%;
+        height: 100%;
+    }
 
     #flipCardColor1{
         background-color: #03045e;
@@ -2350,24 +2357,26 @@ font-size: 0.75rem;
         
         .NameBox{
             height: 40px;
-            width: 400px;
+            width: 100%;
+
         }
         
         .EmailBox{
             height: 40px;
-            width: 400px;
+            width: 100%;
 
         }
         
         .ContactBox{
             height: 40px;
-            width: 400px;
+            width: 100%;
 
         }
         
         #Message{
         height: 200px;
-        width: 400px;
+        width: 100%;
+
 
         }
         
@@ -2445,9 +2454,6 @@ font-size: 0.75rem;
             display: flex;
             flex-direction: column;
         }
-
-
-
 
 
 }
