@@ -1745,7 +1745,7 @@ font-size: 0.75rem;
 
 
 
-@media screen and (max-width: 800px) and (min-width: 600px){
+@media (max-width: 800px){
 
 
 .Option{
